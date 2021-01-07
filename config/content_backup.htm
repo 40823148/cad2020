@@ -4,24 +4,29 @@
 <h2>建立個人網站</h2>
 <p>step1<br/>下載可攜式python verson 3.8.5 "fall 2020"<br/>利用cmd指令查看當前python版本以及所是用套件清單</p>
 <p><span>step</span>2<br/>去google git window 以下載git 套件 <br/>解壓縮fall2020/data/新增資料夾portablegit<br/>將start.bat拉出更改cord</p>
-<p>REM for portable git<br/>set path_git=%Disk%:\portablegit\bin;<br/>在path路徑後新增 %path_git%; 變數</p>
-<p>設定完後重啟start.bat <br/>輸入指令git version 以測試git指令套件是否生效及查看版本</p>
-<p><span>step</span>3<br/>cd fall2020/tmp<br/>*使用學校電腦時需設置代理伺服器porxy <br/>*輸入指令git config --global http.proxy http://[2001:288:6004:17::69]:3128<br/>抓取個人姓名及帳號<br/>git config --global user.email "40823148@gm.nfu.edu"</p>
-<p>git config --global user.name "40823148"</p>
-<p><span>step</span>4<br/>在github建立倉儲cad2020<br/>cd tmp 進入tmp目錄下<br/>將建立的倉儲抓下來並在tmp目錄下建立cad2020子目錄<br/>git clone https://github.com/40823148/cad2020.git</p>
-<p><span>step</span>5<br/>cd tmp/cad2020 進入tmp目錄中的cad子目錄<br/>輸入指令<br/>git submodule add https://github.com/mdecourse/cmsimde.git cmsimde<br/>將在mdecourse倉儲中的模組git下來並在cad2020中建立cmsimde的目錄</p>
+<p><span style="color: #3366ff; background-color: #ffffff;">REM for portable git</span><br/><span style="color: #3366ff; background-color: #ffffff;">set path_git=%Disk%:\portablegit\bin;</span><br/>在path路徑後新增<span style="background-color: #ffffff; color: #3366ff;"> %path_git%;</span> 變數</p>
+<p>設定完後重啟start.bat <br/>輸入指令<span style="background-color: #000000; color: #ffffff;">git version</span> 以測試git指令套件是否生效及查看版本</p>
+<p><span>step</span>3<br/><span style="background-color: #000000; color: #ffffff;">cd fall2020/tmp</span><br/>*使用學校電腦時需設置代理伺服器porxy <br/>*輸入指令<span style="background-color: #000000; color: #ffffff;">git config --global http.proxy http://[2001:288:6004:17::69]:3128</span><br/>抓取個人姓名及帳號<br/><span style="background-color: #000000; color: #ffffff;">git config --global user.email "40823148@gm.nfu.edu"</span></p>
+<p><span style="background-color: #000000; color: #ffffff;">git config --global user.name "40823148"</span></p>
+<p><span>step</span>4<br/>在github建立倉儲cad2020<br/><span style="background-color: #000000; color: #ffffff;">cd tmp</span> 進入tmp目錄下<br/>將建立的倉儲抓下來並在tmp目錄下建立cad2020子目錄<br/><span style="background-color: #000000; color: #ffffff;">git clone https://github.com/40823148/cad2020.git</span></p>
+<p><span>step</span>5<br/><span style="background-color: #000000; color: #ffffff;">cd tmp/cad2020 </span>進入tmp目錄中的cad子目錄<br/>輸入指令<br/><span style="background-color: #000000; color: #ffffff;">git submodule add https://github.com/mdecourse/cmsimde.git cmsimde</span><br/>將在mdecourse倉儲中的模組git下來並在cad2020中建立cmsimde的目錄</p>
 <p><span>step</span>6<br/>進入cmsimde中 將up_dir檔案全部複製至cad2020目錄下</p>
-<p><span>step</span>7<br/>使用指令<br/>pip install flask flask_cors lxml bs4 markdown pelican leo<br/>將建立網站所需模組套件抓下來</p>
-<p><span>step</span>8<br/>cd tmp/cad2020/cmsimde 進入cmsimde目錄中<br/>python wsgi.py<br/>輸入指令以啟動網頁引擎</p>
-<p>輸入密碼admin<br/>將網頁做基本名稱更改後 確認無礙轉成靜態網頁<br/>cd tmp/cad2020 進入cad2020目錄下<br/>git add . 將所更改的檔案整合<br/>git commit -m"檔案名稱" <br/>git push 將檔案推送至倉儲<br/>輸入github 使用者名稱及密碼<br/>推送完成<br/>在cad2020倉儲設定github pages<br/>可得到靜態網址 https://40823148.github.io/cad2020/</p>
-<h2>W3</h2>
+<p><span>step</span>7<br/>使用指令<br/><span style="background-color: #000000; color: #ffffff;">pip install flask flask_cors lxml bs4 markdown pelican leo</span><br/>將建立網站所需模組套件抓下來</p>
+<p><span>step</span>8<br/><span style="background-color: #000000; color: #ffffff;">cd tmp/cad2020/cmsimde</span> 進入cmsimde目錄中<br/><span style="background-color: #000000; color: #ffffff;">python wsgi.py</span><br/>輸入指令以啟動網頁引擎</p>
+<p>輸入密碼admin<br/>將網頁做基本名稱更改後 確認無礙轉成靜態網頁<br/><span style="background-color: #000000; color: #ffffff;">cd tmp/cad2020</span> 進入cad2020目錄下<br/><span style="background-color: #000000; color: #ffffff;">git add .</span> 將所更改的檔案整合<br/><span style="background-color: #000000; color: #ffffff;">git commit -m"檔案名稱"</span> <br/><span style="background-color: #000000; color: #ffffff;">git push </span>將檔案推送至倉儲<br/>輸入github 使用者名稱及密碼<br/>推送完成<br/>在cad2020倉儲設定github pages<br/>可得到靜態網址 https://40823148.github.io/cad2020/</p><h2>W3</h2>
 <p>中秋假期</p>
 <h2>W4</h2>
 <p></p>
 <h2>W5</h2>
 <h1>零件繪製</h1>
 <h2>Solidworks 零件繪圖練習1</h2>
-<p><a href="/downloads/Solidworks%20%E9%9B%B6%E4%BB%B6%E7%B9%AA%E5%9C%96%E7%B7%B4%E7%BF%921.pdf">Solidworks 零件繪圖練習1</a></p><h2>Solidworks 零件繪圖練習2</h2>
+<p><a href="/downloads/Solidworks%20%E9%9B%B6%E4%BB%B6%E7%B9%AA%E5%9C%96%E7%B7%B4%E7%BF%921.pdf">Solidworks 零件繪圖練習1</a></p>
+<p></p>
+<p></p>
+<p><a href="https://cad.onshape.com/documents/5bd57f1d72eb9389cac8dcd7/w/cbe7b5edeaec550e7e7a230f/e/60d5caa4c4a347deeee4547f">001</a></p>
+<p><a href="https://cad.onshape.com/documents/de8710c2a803ef0660862bb4/w/e8f94588ecca94c1961fa61a/e/e6ed035d33ae496741a85aa5">002</a></p>
+<p><a href="https://cad.onshape.com/documents/dd464502389390e65c39f4e6">003</a></p>
+<p><a href="https://cad.onshape.com/documents/e8ffd9d5669fa16c69a9ebad/w/10ac3f6f324a0374c7e386e9/e/dff925ac3089ae286d3b7054">004</a></p><h2>Solidworks 零件繪圖練習2</h2>
 <p><a href="/downloads/Solidworks%20%E9%9B%B6%E4%BB%B6%E7%B9%AA%E5%9C%96%E7%B7%B4%E7%BF%922.pdf">Solidworks 零件繪圖練習2</a></p><h1>video</h1>
 <p></p>
 <h1>組員連結</h1>
